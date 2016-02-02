@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>12 Column Grid Demo</title>
+    <link rel="icon" type="image/png" href="Images/Logo.png" />
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel=stylesheet href="Styles/styles.css">
+</head>
+
+<body id="main">
+    <nav class="nav navbar-fixed-top navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+
+                <!-- this is the hamburger menu button visible for mobiles only -->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <!-- this is where the logo would live -->
+                <a class="navbar-brand" href="#top">
+                    <img src="Images/Logo.svg" alt="12 Column Grid Demo" /> 12CG
+                </a>
+            </div>
+
+            <!-- this is the hamburger menu itself - again only visible to mobiles after the menu button is tapped -->
+            <div class="collapse navbar-collapse" id="main-menu">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#device-widths">Device Widths</a>
+                    </li>
+                    <li>
+                        <a href="#the-container">The Container</a>
+                    </li>
+                    <li>
+                        <a href="#the-navbar">The <em>navbar</em></a>
+                    </li>
+                    <li>
+                        <a href="#the-gutter">The 15px Gutter</a>
+                    </li>
+                    <li class="dropdown device-widths">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Guides <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#" id="btn-container-guide">Container <i class="fa fa-check-square"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" id="btn-margin">Page margin <i class="fa fa-check-square"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" id="btn-columns">Columns <i class="fa fa-check-square"></i></a>
+                            </li>
+                            <li>
+                                <a href="#" id="btn-gutters">Gutters <i class="fa fa-check-square"></i></a>
+                            </li>
+                            <li role="separator" class="divider"></li>
+                            <li>
+                                <a href="#" id="btn-show-all">Show all</a>
+                            </li>
+                            <li>
+                                <a href="#" id="btn-hide-all" class="hidden">Hide all</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-expand"></i> <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#" class="device-width" data-width="392"><i class="fa fa-mobile"></i> Extra small</a>
+                            </li>
+                            <li>
+                                <a href="#" class="device-width" data-width="785"><i class="fa fa-tablet"></i> Small</a>
+                            </li>
+                            <li>
+                                <a href="#" class="device-width" data-width="1009"><i class="fa fa-laptop"></i> Medium</a>
+                            </li>
+                            <li>
+                                <a href="#" class="device-width" data-width="1217"><i class="fa fa-desktop"></i> Large</a>
+                            </li>
+                            <li role="separator" class="divider"></li>
+                            <li>
+                                <a href="#" id="fit-to-screen"><i class="fa fa-expand"></i> Fit to screen</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- end of container -->
+    </nav>
+
+    <iframe src="body.html" frameborder="0"></iframe>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="JS/iframe.js"></script>
+    <script type="text/javascript" src="JS/navigation.js"></script>
+    <script type="text/javascript" src="JS/guides.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>12 Column Grid Demo</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel=stylesheet href="Styles/styles.css">
+</head>
+
+<body id="top">
+    <div class="jumbotron" id="top">
+        <div class="container">
+            <h1>12 Column Grids!</h1>
+            <p>This component is full-width, but the content is constrained by the "container".</p>
+            <p>Notice how the green background stretches across the screen, but the content is still aligned with the rest of the page? This is because we are using a container that changes width depending on the viewport (screen) width!</p>
+            <p>
+                <a class="btn btn-primary btn-lg" id="columns-on" href="#" role="button">Show columns <i class="fa fa-trello"></i></a>
+                <a class="btn btn-default btn-lg hidden" id="columns-off" href="#" role="button">Hide columns <i class="fa fa-trello"></i></a>
+                <a class="btn btn-primary btn-lg" href="http://getbootstrap.com/2.3.2/scaffolding.html#gridSystem" target="_blank" role="button">Learn more <i class="fa fa-external-link-square"></i></a>
+            </p>
+        </div>
+    </div>
+
+    <!-- device widths / the Container -->
+    <section class="container info" id="device-widths">
+        <h1>Device Widths</h1>
+        <div class="row">
+            <section class="col-sm-6 col-md-3">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Extra Small</h3>
+                    </div>
+                    <div class="panel-body">
+                        <i class="fa fa-mobile"></i>
+                        <p>Since 2015 more than half of Google searches were via mobile devices, so mobile designs need to be accessible and easy to navigate. This is a fluid layout, meaning there is not a fixed width container.</p>
+                        <ul>
+                            <li>Usually single column</li>
+                            <li>Only hamburger navigation</li>
+                            <li>Simplified content (no carousels, background videos etc)</li>
+                        </ul>
+                    </div>
+                    <table class="table">
+                        <tr>
+                            <th>
+                                Min
+                            </th>
+                            <th>
+                                Max
+                            </th>
+                            <th>
+                                Fixed
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                n/a
+                            </td>
+                            <td>
+                                767px
+                            </td>
+                            <td>
+                                n/a
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+            <section class="col-sm-6 col-md-3">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Small</h3>
+                    </div>
+                    <div class="panel-body">
+                        <i class="fa fa-tablet"></i>
+                        <p>The portrait tablet view is tricky as you have to find a balance between the "mobile feel" of a website and adding more content to the now fixed-width layout, meaning there is a margin either side of the content.</p>
+                        <ul>
+                            <li>Up to two columns</li>
+                            <li>Hamburger navigation preferred</li>
+                            <li>Simplified content (no carousels, background videos etc)</li>
+                        </ul>
+                    </div>
+                    <table class="table">
+                        <tr>
+                            <th>
+                                Min
+                            </th>
+                            <th>
+                                Max
+                            </th>
+                            <th>
+                                Fixed
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                768px
+                            </td>
+                            <td>
+                                991px
+                            </td>
+                            <td>
+                                750px
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+            <section class="col-sm-6 col-md-3">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Medium</h3>
+                    </div>
+                    <div class="panel-body">
+                        <i class="fa fa-laptop"></i>
+                        <p>If the user isn't on a mobile, they are probably using a device with this screen width. Known as the normal "desktop" view, this is more common among laptops and landscape tablets. Confused yet?</p>
+                        <ul>
+                            <li>Usually two or three columns</li>
+                            <li>Full navigation</li>
+                            <li>Full content, no holds barred</li>
+                        </ul>
+                    </div>
+                    <table class="table">
+                        <tr>
+                            <th>
+                                Min
+                            </th>
+                            <th>
+                                Max
+                            </th>
+                            <th>
+                                Fixed
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                992px
+                            </td>
+                            <td>
+                                1199px
+                            </td>
+                            <td>
+                                970px
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+            <section class="col-sm-6 col-md-3">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Large</h3>
+                    </div>
+                    <div class="panel-body">
+                        <i class="fa fa-desktop"></i>
+                        <p>The big Kahuna. The Big Lewbowski. Big Daddy Box Meal. While the size is bigger, the container is still a fixed width of 1170px. This means that even if this was on super big monitor, the actual content size won't change, just the width of the margin. The content and layout usually doesn't differ from the "Medium" size.</p>
+                    </div>
+                    <table class="table">
+                        <tr>
+                            <th>
+                                Min
+                            </th>
+                            <th>
+                                Max
+                            </th>
+                            <th>
+                                Fixed
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                1200px
+                            </td>
+                            <td>
+                                n/a
+                            </td>
+                            <td>
+                                1170px
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+        </div>
+        <div class="row" id="the-container">
+            <div class="col-md-8 col-md-offset-2">
+                <h1>The Container</h1>
+                <p>The container is used to keep elements within a fixed width layout. The table above shows how wide the container is for each device in the "Fixed" column.</p>
+                <p>If the viewport / screen width is larger than the fixed width a margin is given to each side equally, keeping the container in the centre of the page.</p>
+                <a href="#" class="btn btn-primary btn-lg" id="margin-on">Show margin overlay <i class="fa fa-pause"></i></a>
+                <a href="#" class="btn btn-default btn-lg hidden" id="margin-off">Hide margin overlay <i class="fa fa-pause"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- the Navbar -->
+    <section class="info" id="the-navbar">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <h1>The <em>navbar</em></h1>
+                    <p>The <em>navbar</em> is where all the navigation in a header goes.</p>
+                </div>
+            </div>
+
+            <!-- example navbar - doesn't do anything -->
+            <nav class="navbar navbar-default clear-left">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">
+                            <img src="Images/Logo.svg" alt="12 Column Grid Demo" /> 12CG
+                        </a>
+                    </div>
+                    <div class="navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <a href="#">Link</a>
+                            </li>
+                            <li class="active">
+                                <a href="#">Link</a>
+                            </li>
+                            <li>
+                                <a href="#">Link</a>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <button type="button" class="btn btn-default navbar-btn">Log in</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <p>Because the outer edges of the <em>navbar</em> are within the container, the logo has a <strong>15px wide left margin</strong> (more on that in the next section), not aligned with the container. It is possible to eliminate this with custom CSS, but we would need to add it back in for the mobile view - otherwise the links will appear at the edge of the screen.</p>
+                    <a href="#" class="btn btn-primary btn-lg" id="container-guide-on">Turn on container guides <i class="fa fa-table"></i></a>
+                    <a href="#" class="btn btn-default btn-lg hidden" id="container-guide-off">Turn off container guides <i class="fa fa-table"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- the Gutter -->
+    <section class="info" id="the-gutter">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <h1>The 15px Gutter</h1>
+                    <p>All elements in Bootstrap have a 15px horizontal gutter either side of them, and most have a 15px horizontal padding (inside-margin).</p>
+                </div>
+            </div>
+            <div class="row">
+                <section class="col-sm-6 col-md-6">
+                    <div class="panel panel-primary">
+                        <div class="panel-body">
+                            <i class="fa fa-gift"></i>
+                        </div>
+                    </div>
+                </section>
+                <section class="col-sm-6 col-md-3">
+                    <div class="panel panel-primary">
+                        <div class="panel-body">
+                            <i class="fa fa-cogs"></i>
+                        </div>
+                    </div>
+                </section>
+                <section class="col-sm-4 col-md-3">
+                    <div class="panel panel-primary">
+                        <div class="panel-body">
+                            <i class="fa fa-comments-o"></i>
+                        </div>
+                    </div>
+                </section>
+                <section class="col-sm-8 col-md-12">
+                    <div class="panel panel-primary">
+                        <div class="panel-body">
+                            <i class="fa fa-trophy"></i>
+                        </div>
+                    </div>
+                </section>
+                <section class="col-sm-7 col-md-8">
+                    <div class="panel panel-primary">
+                        <div class="panel-body">
+                            <i class="fa fa-camera"></i>
+                        </div>
+                    </div>
+                </section>
+                <section class="col-sm-5 col-md-4">
+                    <div class="panel panel-primary">
+                        <div class="panel-body">
+                            <i class="fa fa-umbrella"></i>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <p>Even though elements in the first and last columns still have the 15px gutter either side, the row that contains them has a margin of -15px on either side. This means that the elements still appear to be aligned with the container.</p>
+                    <a href="#" class="btn btn-primary btn-lg" id="gutters-on">Show gutters overlay <i class="fa fa-columns"></i></a>
+                    <a href="#" class="btn btn-default btn-lg hidden" id="gutters-off">Hide gutters overlay <i class="fa fa-columns"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <h2>Coming soon:</h2>
+            <ul class="list-group">
+                <li class="list-group-item">An overlay plugin for chrome that will allow users to view the 12 column grid layout on any website on the web</li>
+                <li class="list-group-item">Improve the overlay functionality so that custom layouts can be incorporated: gutter size, number of columns, etc</li>
+                <li class="list-group-item">Improve the screen size feature so that users can add their own breakpoints</li>
+            </ul>
+            <p>Designed by <a href="http://getbootstrap.com/about/">Bootstrap</a>, built by <a href="http://alexdodd.net">Alex Dodd</a>.</p>
+            <p>&copy; 2016</p>
+        </div>
+    </footer>
+
+    <div id="overlay">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-1">
+                    <div class="content"></div>
+                </div>
+                <div class="col-xs-1">
+                    <div class="content"></div>
+                </div>
+                <div class="col-xs-1">
+                    <div class="content"></div>
+                </div>
+                <div class="col-xs-1">
+                    <div class="content"></div>
+                </div>
+                <div class="col-xs-1">
+                    <div class="content"></div>
+                </div>
+                <div class="col-xs-1">
+                    <div class="content"></div>
+                </div>
+                <div class="col-xs-1">
+                    <div class="content"></div>
+                </div>
+                <div class="col-xs-1">
+                    <div class="content"></div>
+                </div>
+                <div class="col-xs-1">
+                    <div class="content"></div>
+                </div>
+                <div class="col-xs-1">
+                    <div class="content"></div>
+                </div>
+                <div class="col-xs-1">
+                    <div class="content"></div>
+                </div>
+                <div class="col-xs-1">
+                    <div class="content"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</body>
+
+</html>

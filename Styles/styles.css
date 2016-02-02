@@ -1,0 +1,170 @@
+body {
+    background: #EEE;
+    margin: 0;
+}
+
+iframe {
+    display: block;
+    width: 100%;
+    margin: auto;
+    transition: width 0.2s;
+}
+
+body#main {
+    padding-top: 50px;
+    overflow-y: hidden;
+    background: #333;
+}
+
+em {
+    font-style: normal;
+    font-family: monospace;
+}
+
+.navbar-brand img {
+    height: 100%;
+    display: inline;
+}
+
+.jumbotron {
+    background: rgb(116, 205, 198);
+    color: rgb(20, 109, 102);
+}
+
+.panel-primary {
+    border-color: rgb(121, 165, 210);
+}
+
+.panel-primary > .panel-heading {
+    border-color: rgb(121, 165, 210);
+    background: rgb(121, 165, 210);
+    color: rgb(25, 69, 114);
+}
+
+.panel-body p {
+    font-size: 14px;
+}
+
+.panel-body i.fa {
+    display: block;
+    text-align: center;
+    font-size: 10em;
+    color: rgb(116, 205, 198);
+}
+
+.panel-body ul {
+    padding-left: 15px;
+}
+
+th {
+    color: rgb(25, 69, 114);
+}
+
+p {
+    font-size: 20px;
+}
+
+@media (max-width: 767px) {
+    p {
+        font-size: 16px
+    }
+}
+
+.clear-left {
+    clear: left;
+}
+
+section.info {
+    padding-top: 48px;
+    padding-bottom: 60px;
+}
+
+@media (max-width: 767px) {
+    section.info {
+        padding-top: 24px;
+        padding-bottom: 30px;
+    }
+}
+
+#the-navbar {
+    background: rgb(119, 189, 208);
+    color: rgb(23, 93, 112);
+}
+
+.device-widths i {
+    display: none;
+    float: right;
+}
+
+.device-widths a.show i {
+    display: inline-block;
+}
+
+#overlay,
+#overlay .container,
+#overlay .col-xs-1,
+#overlay .content {
+    transition: background .2s;
+}
+
+#overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+#overlay .container {
+    position: relative;
+}
+
+#overlay.container-guide .container:before {
+    border-left: 15px solid rgba(180, 228, 224, 0.7);
+    content: '';
+    height: 100%;
+    margin-left: -15px;
+    position: absolute;
+    top: 0;
+}
+
+#overlay.container-guide .container:after {
+    border-right: 15px solid rgba(180, 228, 224, 0.7);
+    content: '';
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#overlay.margin {
+    background: rgba(208, 198, 119, 0.5);
+}
+
+#overlay.margin .container {
+    background: rgba(250, 250, 250, 0.66);
+}
+
+#overlay.gutters .col-xs-1 {
+    background: rgba(67, 219, 50, 0.2);
+}
+
+#overlay.gutters .content {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+#overlay.columns .content {
+    background: rgba(121, 165, 210, 0.3);
+}
+
+footer {
+    padding-top: 50px;
+    padding-bottom: 40px;
+    margin-top: 30px;
+    color: #99979c;
+    text-align: center;
+    background-color: #2a2730;
+}
+
+footer a {
+    color: #fff;
+}
